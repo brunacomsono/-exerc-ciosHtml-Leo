@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            text-align: right;
+            color: #909;
+            border-bottom: solid #909;
+        }
+        img{
+            float: left;
+        }
+        fieldset{
+            border: solid #Fcc;
+        }
+        label{
+            display:inline-block;
+            width: 60px;
+        }
+        input,
+        textarea{
+            background-color: #Fcc;
+            border-style: none;
+        }
+        input[type = "text"],
+        input[type = "password"],
+        input[type = "email"],
+        textarea{
+            width: 80%;
+        }
+        input[type= "submit"]{
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dados da conta</h1>
+    <img src="../Ex1/form1_back 1.jpg" alt="for1_back">
+    <form action="">
+        <input type="hidden">
+        <fieldset>
+            <legend>Dados Pessoais</legend> 
+            <p>
+                <label for="nome">Nome:</label>
+                 <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados da conta:</legend>
+            <p>
+                <label for="Senha">Senha:</label>
+                 <input type="password" name="senha" id="senha">
+            </p>
+            <p>
+                <label for="frase">Frase Opcional:</label>
+                <textarea name="frase" id="frase"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+        </p>
+    </form>
+</body>
+</html>
