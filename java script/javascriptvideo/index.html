@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <h1>Meu primeiro desafio com JS</h1>
+    <p>esse é um texto da minha página desafio</p>
+</body>
+<script>
+    //let=Caixa para guardar informações
+    let listaCores = ['yellow', 'blue','green','red','pink','purple','navy blue'];
+    document.body.style.backgroundColor = listaCores[6];
+    //funcion= defini o index e o codigo sibre as existência das corees
+    function trocarCores(){
+    document.body.style.backgroundColor = listaCores [Math.floor(6 * Math.random())];
+
+    }
+    //setinterval= Intervalo de tempo entre a troca de cores para esse codigo
+    setInterval(trocarCores,200);
+</script>
+</html>
