@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar texto</title>
+    <style>
+        h2{
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="mensagem">Olá, hamood habibi!😝</h2>
+    <button onclick="mudarTexto()">Vire amigo do hamood clicando aqui</button>
+    <script>
+        function mudarTexto() {
+            document.getElementById("mensagem").innerHTML = "Você foi possuído👻"
+        }
+    let listaCores = ['darkred', 'darkgreen', 'black'];
+    document.body.style.backgroundColor = listaCores[3];
+    function trocarCores(){
+    document.body.style.backgroundColor = listaCores [Math.floor(3 * Math.random())];
+    }
+    setInterval(trocarCores,200);
+    </script>
+
+</body>
+</html>
